@@ -50,6 +50,13 @@ This is an initial release. Maze2D U-Maze is the first worked example; the other
 paper experiments are not yet packaged here. Planned additions include
 hierarchical routing, AntMaze, the Strategy Inverter, and quantum gate synthesis.
 
+## Original submission archive
+
+The unchanged [original NeurIPS submission code bundle](archive/neurips-2026-submission/README.md)
+is also available, including code for Maze2D, AntMaze, AntMan, and quantum gate
+synthesis. It preserves the historical submission; the tutorials above provide
+the maintained setup and evaluation workflow.
+
 ## Reproduction and experimentation
 
 The U-Maze example targets **`maze2d-umaze-v1` in legacy D4RL**, using Gym,
