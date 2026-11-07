@@ -1,0 +1,49 @@
+{
+  "environment": "maze2d-umaze-v1",
+  "original_dataset_file": "maze2d-umaze-sparse-v1.hdf5",
+  "original_dataset_sha256": "f2d327d95067d53e274ac2fe876b740ed7883d0a9738bd5b447635cdb786bfb7",
+  "extraction_source": "scripts/extract_maze2d_v1_data.py",
+  "extraction_source_sha256": "cc900903247dcb520b0eafaf18b0bd59a8751b71fbabe2fed14c90e936d9398d",
+  "normalization": "None; original observations and actions in float32.",
+  "arrays": {
+    "states.npy": {
+      "shape": [
+        1000000,
+        4
+      ],
+      "dtype": "float32",
+      "sha256": "14267a8f3f252021e5ed28fb451a19d8a85880a8c614742681a2ae092c66828e"
+    },
+    "actions.npy": {
+      "shape": [
+        1000000,
+        2
+      ],
+      "dtype": "float32",
+      "sha256": "7de2169ef7af305def72197917b93010896c8dfd96def7b656455cdec19eaed1"
+    },
+    "next_states.npy": {
+      "shape": [
+        1000000,
+        4
+      ],
+      "dtype": "float32",
+      "sha256": "73e2c52893dc5d290f1b3ca62a46ea6df5073f4d441701a00e8b8539b3a40799"
+    },
+    "goals.npy": {
+      "shape": [
+        1000000,
+        2
+      ],
+      "dtype": "float32",
+      "sha256": "a45ebfee3b4213ce4753aa92443091347d5e9f4b72f4de1770c9d370322585fe"
+    },
+    "episode_lengths.npy": {
+      "shape": [
+        12460
+      ],
+      "dtype": "int64",
+      "sha256": "908852ea5c25e67f1324d209300871a37090c346e4d25ba3b1d54e5e4c826a85"
+    }
+  }
+}

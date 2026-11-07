@@ -1,0 +1,47 @@
+{
+  "experiment": {
+    "name": "maze2d_umaze_final_fm_smooth0.01_300ep_seed789_20260412_105530",
+    "created": "2026-04-12T10:55:33",
+    "script": "scripts/train_maze2d_fm_universal.py",
+    "gpu": 7,
+    "python": "<PYTHON>"
+  },
+  "model": {
+    "class": "UniversalTransformerFM",
+    "state_dim": 4,
+    "action_dim": 2,
+    "chunk_length": 16,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 4,
+    "ff_mult": 4,
+    "dropout": 0.1,
+    "params": 847364
+  },
+  "training": {
+    "maze": "umaze",
+    "gpu": 7,
+    "chunk_length": 16,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 4,
+    "ff_mult": 4,
+    "dropout": 0.1,
+    "epochs": 300,
+    "batch_size": 512,
+    "lr": 0.0003,
+    "s0_noise": 0.01,
+    "n_train": 500000,
+    "n_val": 50000,
+    "seed": 789,
+    "name": "maze2d_umaze_final_fm_smooth0.01_300ep_seed789_20260412_105530",
+    "out_dir": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_seed789_20260412_105530",
+    "save_every": 0,
+    "save_all": true,
+    "resume": false,
+    "no_episode_aware": false,
+    "zscore_loss": false,
+    "zscore_momentum": 0.99,
+    "zscore_warmup": 100
+  }
+}

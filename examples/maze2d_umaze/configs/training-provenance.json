@@ -1,0 +1,69 @@
+{
+  "source_repository": "iwbm-paper",
+  "source_commit": "9df52144c4b4e80985bf0a7939523ccead5e683c",
+  "adaptations": [
+    "Editable-package imports replace legacy src.models imports.",
+    "Checkout-relative paths, U-Maze-only entry points, archived recipe defaults, and explicit data_dir overrides.",
+    "D4RL construction is delegated to inverter.envs.maze2d.make_umaze.",
+    "Optional plotting monitor and automatic legacy post-training evaluation removed; model math, losses, optimizers, data sampling and live per-epoch diagnostics preserved.",
+    "No newly seeded Torch RNG; the original sampling-seed limitation is preserved and documented."
+  ],
+  "files": [
+    {
+      "source_path": "src/models/universal_transformer_fm.py",
+      "source_sha256": "f6026e29d954418f36504fbc0d5d4f692a3e508ff77417e8fe231f5e1703e8ac",
+      "packaged_path": "src/inverter/models/universal_transformer_fm.py",
+      "packaged_sha256": "f6026e29d954418f36504fbc0d5d4f692a3e508ff77417e8fe231f5e1703e8ac",
+      "byte_identical": true
+    },
+    {
+      "source_path": "src/models/iwm_transformer.py",
+      "source_sha256": "19f1028b54636d765d5a1cd5f4d1c413699a73a0746c5296cd4026ff525bcb5b",
+      "packaged_path": "src/inverter/models/iwm_transformer.py",
+      "packaged_sha256": "19f1028b54636d765d5a1cd5f4d1c413699a73a0746c5296cd4026ff525bcb5b",
+      "byte_identical": true
+    },
+    {
+      "source_path": "src/models/iwm_v2.py",
+      "source_sha256": "ba17a8a099caa08163ce3e8f92fc72311d2ac44ea420420e4b58ef857618e995",
+      "packaged_path": "src/inverter/models/iwm_v2.py",
+      "packaged_sha256": "ba17a8a099caa08163ce3e8f92fc72311d2ac44ea420420e4b58ef857618e995",
+      "byte_identical": true
+    },
+    {
+      "source_path": "src/models/transformer_forward_model.py",
+      "source_sha256": "36efd595d165cd6dab3316ab4fe8648cc9ce4e3895da2678ee01182d73c503ba",
+      "packaged_path": "src/inverter/models/transformer_forward_model.py",
+      "packaged_sha256": "36efd595d165cd6dab3316ab4fe8648cc9ce4e3895da2678ee01182d73c503ba",
+      "byte_identical": true
+    },
+    {
+      "source_path": "src/models/chunk_forward_model.py",
+      "source_sha256": "a7fcb7b5820686d8c79dd8045120098c8f980f43372be5ba76e1b45d297ffadd",
+      "packaged_path": "src/inverter/models/chunk_forward_model.py",
+      "packaged_sha256": "a7fcb7b5820686d8c79dd8045120098c8f980f43372be5ba76e1b45d297ffadd",
+      "byte_identical": true
+    },
+    {
+      "source_path": "scripts/train_maze2d_fm_universal.py",
+      "source_sha256": "ea72dd8b68849e94e16b03f5e033d40b2819ec915bc9c882282a5d3738df05ae",
+      "packaged_path": "examples/maze2d_umaze/train_forward.py",
+      "packaged_sha256": "acce2c9fe20d76c3237c06bf8101156ecf8346fb6c33ff96fe5646e28c1c665c",
+      "byte_identical": false
+    },
+    {
+      "source_path": "scripts/train_iwm_maze2d_v1.py",
+      "source_sha256": "bf55d0084caad1c15cddfc7e4dbc874a16c64dcf09ecab754f8e42d39404ba49",
+      "packaged_path": "examples/maze2d_umaze/train_inverse.py",
+      "packaged_sha256": "960ca64c1efb289060e4848fa7d99ca12a6b7a99fa0e1db9afd579635e18ab56",
+      "byte_identical": false
+    },
+    {
+      "source_path": "scripts/extract_maze2d_v1_data.py",
+      "source_sha256": "cc900903247dcb520b0eafaf18b0bd59a8751b71fbabe2fed14c90e936d9398d",
+      "packaged_path": "examples/maze2d_umaze/prepare_data.py",
+      "packaged_sha256": "edb0e263ee6880eb6f9506c264937cc5089ed41818cec541b3ab788219aafbe8",
+      "byte_identical": false
+    }
+  ]
+}

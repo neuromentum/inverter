@@ -1,0 +1,16 @@
+# Snapshot of the working legacy Maze2D environment, audited 2026-11-07.
+# These are direct dependencies, not a complete transitive lockfile.
+# Install D4RL separately with --no-deps; see d4rl.txt and docs/maze2d-environment.md.
+setuptools==80.9.0
+wheel==0.45.1
+Cython==0.29.37
+numpy==1.24.4
+scipy==1.11.4
+h5py==3.14.0
+gym==0.23.1
+mujoco-py==2.1.2.14
+torch==2.8.0
+matplotlib==3.9.4
+tqdm==4.67.3
+termcolor==3.1.0
+click==8.1.8

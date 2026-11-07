@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuromentum-inverter"
+version = "0.1.0.dev0"
+description = "Inverse learning for planning and control: models, tutorials, and reproducible examples"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  {name = "Maryna Kapitonova"},
+  {name = "Tonio Ball"},
+]
+dependencies = ["numpy>=1.24", "torch>=2.0", "scipy>=1.11"]
+
+[project.urls]
+Repository = "https://github.com/neuromentum/inverter"
+Paper = "https://arxiv.org/abs/2605.24152"
+
+[tool.setuptools.packages.find]
+where = ["src"]

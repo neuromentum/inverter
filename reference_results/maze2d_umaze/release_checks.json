@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-07",
+  "environment": "Existing Linux x86_64 research environment, Python 3.9.25",
+  "editable_package_install_from_outside_checkout": "passed; isolated venv reusing installed dependencies",
+  "legacy_environment_checks": "passed with installed research D4RL and an unmodified copy of the pinned public D4RL 1.1 wheel",
+  "dataset_sha256": "f2d327d95067d53e274ac2fe876b740ed7883d0a9738bd5b447635cdb786bfb7",
+  "training_and_artifact_checks": {
+    "checkpoint_pairs_verified": 4,
+    "checkpoint_files_verified": 8,
+    "all_original_source_and_packaged_provenance_hashes_match": true,
+    "cli_help_pass": [
+      "prepare_data.py",
+      "train_forward.py",
+      "train_inverse.py"
+    ],
+    "dataset_extracted_from_existing_cache": true,
+    "five_prepared_array_hashes_match_archive": true,
+    "smoke_device": "cpu",
+    "forward_smoke": {
+      "epochs": 1,
+      "train_windows": 4,
+      "validation_windows": 4,
+      "batch_size": 2,
+      "full_architecture": true,
+      "saved_best_and_resumable_checkpoint": true
+    },
+    "inverter_smoke": {
+      "epochs": 1,
+      "train_windows": 4,
+      "validation_windows": 4,
+      "batch_size": 2,
+      "full_architecture": true,
+      "through_newly_trained_forward_model": true,
+      "live_simulator_episodes": 1,
+      "saved_best_and_resumable_checkpoint": true
+    },
+    "full_training_not_rerun": true,
+    "repository_files_modified_by_validation": []
+  },
+  "limits": [
+    "No clean-machine installation performed.",
+    "Full 300/2000-epoch training campaigns were not rerun.",
+    "No GPU execution or reproduction of paper timing values in this validation."
+  ],
+  "evaluation_record": "release_validation.json"
+}

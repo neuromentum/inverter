@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "environment": "maze2d-umaze-v1",
+  "selection": "best_model.pt selected by validation loss, not best_d4rl_model.pt",
+  "seed_note": "Labels identify four independently trained FM/Inverter pairs. FM NumPy sampling seeds are 42,123,456,789; every Inverter uses NumPy sampling seed123. Archived trainers did not explicitly seed PyTorch.",
+  "models": {
+    "default": {
+      "forward": {
+        "path": "examples/maze2d_umaze/checkpoints/default/forward.pt",
+        "sha256": "b2f9b64e6dde8eadf6d7e8e210b234ada1e15675e0b2c68d82896ec9af6fc5d6",
+        "bytes": 3415605,
+        "source_path": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_20260409_213414/best_model.pt",
+        "source_config_path": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_20260409_213414/config.json",
+        "source_config_sha256": "50b1ef23f95a7e85ffc9e38d80c55660634bad320bfec0902d571d686638e8ee",
+        "archived_config": "examples/maze2d_umaze/configs/archived/default/forward.json",
+        "numpy_sampling_seed": 42
+      },
+      "inverter": {
+        "path": "examples/maze2d_umaze/checkpoints/default/inverter.pt",
+        "sha256": "60d1563edafe0bb7b74257542dbe1b37a194716f351163128d740f38a21ab60c",
+        "bytes": 6233269,
+        "source_path": "maze2d/umaze/iwm/opt170/final/maze2d_umaze_final_d5b5_smooth0.01_20260410_062737/best_model.pt",
+        "source_config_path": "maze2d/umaze/iwm/opt170/final/maze2d_umaze_final_d5b5_smooth0.01_20260410_062737/config.json",
+        "source_config_sha256": "56a41140ba5cf53e5ba99142e578163613607cf89d92a631638cf731faea805c",
+        "archived_config": "examples/maze2d_umaze/configs/archived/default/inverter.json",
+        "numpy_sampling_seed": 123,
+        "best_epoch_saved_index": 1947
+      }
+    },
+    "fmseed123": {
+      "forward": {
+        "path": "examples/maze2d_umaze/checkpoints/fmseed123/forward.pt",
+        "sha256": "a22a489ab14c0bdd21d133cdd4afe5b8ddf725280585fc03a432eb12c5d64b63",
+        "bytes": 3415797,
+        "source_path": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_seed123_20260412_105526/best_model.pt",
+        "source_config_path": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_seed123_20260412_105526/config.json",
+        "source_config_sha256": "84bc7acd82682c10d58545b1a750360c127979878660daafa4e66883df1e9d1b",
+        "archived_config": "examples/maze2d_umaze/configs/archived/fmseed123/forward.json",
+        "numpy_sampling_seed": 123
+      },
+      "inverter": {
+        "path": "examples/maze2d_umaze/checkpoints/fmseed123/inverter.pt",
+        "sha256": "c7709079c2e194af1ec4c55fb8fc3249638715eb3457271dd856efa7b123aa12",
+        "bytes": 6233333,
+        "source_path": "maze2d/umaze/iwm/opt170/final/maze2d_umaze_final_d5b5_smooth0.01_fmseed123_20260420_215643/best_model.pt",
+        "source_config_path": "maze2d/umaze/iwm/opt170/final/maze2d_umaze_final_d5b5_smooth0.01_fmseed123_20260420_215643/config.json",
+        "source_config_sha256": "0ce0450cc949f1eeaac4a1cf9d6de6f84eb8c9dd79c05def449ca2dfd7690eaa",
+        "archived_config": "examples/maze2d_umaze/configs/archived/fmseed123/inverter.json",
+        "numpy_sampling_seed": 123,
+        "best_epoch_saved_index": 1943
+      }
+    },
+    "fmseed456": {
+      "forward": {
+        "path": "examples/maze2d_umaze/checkpoints/fmseed456/forward.pt",
+        "sha256": "824e990b5981b6fd0317dcc53b527a0dc13264fafc6e7f76dbe2dec00d1172d2",
+        "bytes": 3415797,
+        "source_path": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_seed456_20260412_105528/best_model.pt",
+        "source_config_path": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_seed456_20260412_105528/config.json",
+        "source_config_sha256": "2f2e990ec3cb857df5fc42260e4534975974ac63b2919ffc1501936d8aece8f4",
+        "archived_config": "examples/maze2d_umaze/configs/archived/fmseed456/forward.json",
+        "numpy_sampling_seed": 456
+      },
+      "inverter": {
+        "path": "examples/maze2d_umaze/checkpoints/fmseed456/inverter.pt",
+        "sha256": "b730203a547817fca0c35b89bc8f2b2080e48595e43f6ec10ff089ad8f77e5df",
+        "bytes": 6233333,
+        "source_path": "maze2d/umaze/iwm/opt170/final/maze2d_umaze_final_d5b5_smooth0.01_fmseed456_20260420_215643/best_model.pt",
+        "source_config_path": "maze2d/umaze/iwm/opt170/final/maze2d_umaze_final_d5b5_smooth0.01_fmseed456_20260420_215643/config.json",
+        "source_config_sha256": "6ee0e694e6e0b2b913822d5c34ed59cc4368be44b876a9bf3f0b14139716fe3a",
+        "archived_config": "examples/maze2d_umaze/configs/archived/fmseed456/inverter.json",
+        "numpy_sampling_seed": 123,
+        "best_epoch_saved_index": 1874
+      }
+    },
+    "fmseed789": {
+      "forward": {
+        "path": "examples/maze2d_umaze/checkpoints/fmseed789/forward.pt",
+        "sha256": "078b949178fd840db6a52155eca98d930f7393d883c4d41a795a7ceab19105db",
+        "bytes": 3415797,
+        "source_path": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_seed789_20260412_105530/best_model.pt",
+        "source_config_path": "maze2d/umaze/fm/final/maze2d_umaze_final_fm_smooth0.01_300ep_seed789_20260412_105530/config.json",
+        "source_config_sha256": "5e2fd785883c2549fc950a78e2defe97089414ec016cb00ff37c7401b8089aa6",
+        "archived_config": "examples/maze2d_umaze/configs/archived/fmseed789/forward.json",
+        "numpy_sampling_seed": 789
+      },
+      "inverter": {
+        "path": "examples/maze2d_umaze/checkpoints/fmseed789/inverter.pt",
+        "sha256": "14cdefa8842a638bbac7af9bddcb853d26429fa5eeeddab0506f6e28ddfe33c8",
+        "bytes": 6233333,
+        "source_path": "maze2d/umaze/iwm/opt170/final/maze2d_umaze_final_d5b5_smooth0.01_fmseed789_20260420_215643/best_model.pt",
+        "source_config_path": "maze2d/umaze/iwm/opt170/final/maze2d_umaze_final_d5b5_smooth0.01_fmseed789_20260420_215643/config.json",
+        "source_config_sha256": "35ca6ac579f747b29fdc1a8f66cc7a78460c3060fcd5499df67f23386f12bd6e",
+        "archived_config": "examples/maze2d_umaze/configs/archived/fmseed789/inverter.json",
+        "numpy_sampling_seed": 123,
+        "best_epoch_saved_index": 1941
+      }
+    }
+  }
+}

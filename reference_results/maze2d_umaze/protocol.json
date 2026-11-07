@@ -1,0 +1,45 @@
+{
+  "environment_id": "maze2d-umaze-v1",
+  "backend": "legacy Gym + D4RL + mujoco-py + native MuJoCo 2.1.0",
+  "reference_versions": {
+    "gym": "0.23.1",
+    "d4rl": "1.1",
+    "mujoco-py": "2.1.2.14",
+    "numpy": "1.24.4"
+  },
+  "observation": "Raw [x, y, vx, vy], cast to float32; no observation normalization or coordinate offset.",
+  "goal_xy": [
+    1.0,
+    1.0
+  ],
+  "goal_state": [
+    1.0,
+    1.0,
+    0.0,
+    0.0
+  ],
+  "reset": "env.seed(eval_seed + episode_index); env.reset(); do not randomize the goal.",
+  "published_eval_seed": 777,
+  "published_episodes_per_model_and_K": 100,
+  "episode_steps": 300,
+  "inverter_horizon": 128,
+  "published_replan_every": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "execution": "Direct Inverter action chunks; clip to [-1,1]; continue replanning after arrival; no PD hold, BFS, or early goal termination.",
+  "sparse_reward": "1 when distance to goal <= 0.5, otherwise 0; accumulated for all 300 steps.",
+  "reported_success": "At least one observation at distance < 0.45, including the initial state; distinct from reward.",
+  "normalized_score": "100 * env.get_normalized_score(mean_episode_return)",
+  "reference_min_score": 23.85,
+  "reference_max_score": 161.86,
+  "aggregation": "Mean and population standard deviation (ddof=0) of the four checkpoint-family scores.",
+  "geometry": "Original D4RL particle body position [1.2,1.2,0]; no centered-maze or coordinate-offset overrides.",
+  "timing": "The release evaluator makes fresh timing measurements without the original visualization FoM/monitor. Its timings are not the historical paper timing table.",
+  "source_evaluator": "maze2d/navigate_maze2d.py",
+  "source_sweep": "maze2d/timing/run_timing_sweep.py",
+  "historical_csv": "maze2d/timing/timing_umaze_4seeds_evalseed777_20260426_083101.csv",
+  "historical_csv_sha256": "271ea4d65e838ae49f4373ff163f596df95486490650d79b6d15e545bd76d152"
+}
